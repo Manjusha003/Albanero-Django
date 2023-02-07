@@ -318,3 +318,1753 @@ INFO:root: new Student is created sucessfully...
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:root: new Student is created sucessfully...
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 22, in get_queryset
+    queryset = super(GenericAPIView, self).get_queryset()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'GetStudentById' should either include a `queryset` attribute, or override the `get_queryset()` method.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 45, in get_queryset
+    student=Student.__objects.get(pk=self.kwargs[self.lookup_field])
+AttributeError: type object 'Student' has no attribute '_GetStudentById__objects'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 45, in get_queryset
+    student=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    return JsonResponse("student with given id does not exist")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 45, in get_queryset
+    student=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    return JsonResponse(f"student with given id does not exist")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 45, in get_queryset
+    student=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    return JsonResponse({'message':"student with given id does not exist"})
+NameError: name 'message' is not defined
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/4
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 45, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 11, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/7
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 45, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 11, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'HttpResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `HttpResponse` instance.
+Original exception text was: 'HttpResponse' object has no attribute 'name'.
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'JsonResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `JsonResponse` instance.
+Original exception text was: 'JsonResponse' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'JsonResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `JsonResponse` instance.
+Original exception text was: 'JsonResponse' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'HttpResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `HttpResponse` instance.
+Original exception text was: 'HttpResponse' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 54, in get_object
+    queryset=self.get_queryset()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    queryset=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 54, in get_object
+    queryset=self.get_queryset()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    queryset=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 59, in get_object
+    return FileNotFoundError
+NameError: name 'NotF' is not defined
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\cursor.py", line 1251, in next
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 54, in get_object
+    queryset=self.get_queryset()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 47, in get_queryset
+    queryset=Student.objects.get(pk=self.kwargs[self.lookup_field])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 272, in get
+    raise queryset._document.DoesNotExist(msg)
+App.models.DoesNotExist: Student matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 59, in get_object
+    return FileNotFoundError(detail='File not found')
+TypeError: FileNotFoundError() takes no keyword arguments
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'HttpResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `HttpResponse` instance.
+Original exception text was: 'HttpResponse' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'HttpResponse' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `HttpResponse` instance.
+Original exception text was: 'HttpResponse' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/4
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+TypeError: get_queryset() missing 1 required positional argument: 'pk'
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+TypeError: get_queryset() missing 1 required positional argument: 'pk'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 54, in retrieve
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+TypeError: get_queryset() missing 1 required positional argument: 'pk'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'pk'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 74, in get
+    return JsonResponse({user})
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 74, in get
+    return JsonResponse({user})
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 74, in get
+    return JsonResponse({user})
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get
+    return JsonResponse({user})
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\http\response.py", line 599, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Method Not Allowed: /api/user/2
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /createuser
+ERROR:django.request:Internal Server Error: /createuser
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 56, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py", line 12, in validate
+    raise serializers.ValidationError({'error':"age caanot be less than 18"})
+AttributeError: module 'rest_framework_mongoengine.serializers' has no attribute 'ValidationError'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /createuser
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 56, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 429, in run_validation
+    value = self.validate(value)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py", line 12, in validate
+    raise serializers.me_ValidationError({'error':"age caanot be less than 18"})
+mongoengine.errors.ValidationError: {'error': 'age caanot be less than 18'}
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /createuser
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 56, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'MetaDict' object has no attribute 'concrete_model'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /createuser
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 56, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 1051, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+AttributeError: 'MetaDict' object has no attribute 'concrete_model'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/25
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\serializers.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /createuser
+WARNING:django.request:Bad Request: /createuser
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /createuser
+WARNING:django.request:Bad Request: /createuser
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /createuser
+WARNING:django.request:Bad Request: /createuser
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/25
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'FileNotFoundError' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 80, in get
+    return self.retrieve(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `name` on serializer `StudentSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `FileNotFoundError` instance.
+Original exception text was: 'FileNotFoundError' object has no attribute 'name'.
+INFO:root: new Student is created sucessfully...
+WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /api/user/update/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.security.csrf:Forbidden (CSRF cookie not set.): /api/user/update/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Method Not Allowed: /api/user/update/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Method Not Allowed: /api/user/update/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 127, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 65, in update
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 22, in get_queryset
+    queryset = super(GenericAPIView, self).get_queryset()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'updatestudents' should either include a `queryset` attribute, or override the `get_queryset()` method.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 127, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 65, in update
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: get_queryset() missing 1 required positional argument: 'pk'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 127, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 65, in update
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+TypeError: get_queryset() missing 1 required positional argument: 'request'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 127, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 65, in update
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 31, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 22, in get_queryset
+    queryset = super(GenericAPIView, self).get_queryset()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\generics.py", line 66, in get_queryset
+    % self.__class__.__name__
+AssertionError: 'updatestudents' should either include a `queryset` attribute, or override the `get_queryset()` method.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 88, in put
+    student = self.get_object(pk)
+TypeError: get_object() takes 1 positional argument but 2 were given
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 88, in put
+    student = self.get_object1(pk)
+AttributeError: 'updatestudents' object has no attribute 'get_object1'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 88, in put
+    student = self.get_object(pk)
+TypeError: get_object() takes 1 positional argument but 2 were given
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 89, in put
+    student = self.get_object(pk)
+AttributeError: 'updatestudents' object has no attribute 'get_object'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/update/1
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 127, in put
+    return self.update(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 65, in update
+    instance = self.get_object()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 40, in get_object
+    (self.__class__.__name__, lookup_url_kwarg)
+AssertionError: Expected view updatestudents to be called with a URL keyword argument named "id". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /api/user/update/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/delete/10
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/delete/10
+WARNING:django.request:Not Found: /api/user/delete/1
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/delete/2
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Not Found: /api/user/delete/2
+WARNING:django.request:Bad Request: /createuser
