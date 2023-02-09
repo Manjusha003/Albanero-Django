@@ -8,7 +8,7 @@ from mongoengine import Document, SequenceField, StringField, EmailField,IntFiel
 
 class Student(Document):
     studentId = SequenceField(primary_key=True)
-    name = StringField(required=True, max_length=50)
+    name = StringField(max_length=50)
     email= EmailField(required=True,unique=True)
     password = StringField(required=True, max_length=50)
     age=IntField(default=20)

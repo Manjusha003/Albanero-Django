@@ -1,114 +1,126 @@
 from django.shortcuts import render
 from mongoengine import DoesNotExist
-from rest_framework.decorators import api_view
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
-
-
-
-# Create your views here.
-
-
-from .serializers import StudentSerializer
+from .serializers import StudentSerializer  
 from .models import Student
 from rest_framework_mongoengine import generics
-
+# from rest_framework.exceptions import NotFound
 import logging
+from rest_framework.views import APIView
+from rest_framework import status
+import jwt
 
 logging.basicConfig(filename="Logging.txt", filemode="a", level=logging.INFO)
 
 
-# createing  theStudents
-class CreateStudent(generics.CreateAPIView):
-    try:
-        serializer_class = StudentSerializer
-        logging.info(" new Student is created sucessfully...")
-
-    except Exception as e:
-        logging.error(f"error occured", e)
+students = Student.objects.all()
+total = students.count()
 
 
-# getting all the Students
-class StudentList(generics.ListAPIView):
-    try:
-        StudentSerializer.Meta.model = Student
-        serializer_class = StudentSerializer
-        queryset = Student.objects.all()
-    except Exception as e:
-        logging.error(f"error occured", e)
-
-def get_queryset(self):
-    queryset = self.queryset
-    return queryset
-
-
-class GetStudentById(generics.RetrieveAPIView):
-    StudentSerializer.Meta.model=Student
-    serializer_class = StudentSerializer
-    students=Student.objects.all()
-    serializer=StudentSerializer(students,many=True)
-    lookup_field = "pk"
-
-    def get_queryset(self):
-    #   try:
-        queryset=Student.objects.get(pk=self.kwargs[self.lookup_field])
-        serializer=self.serializer_class(queryset,many=True)
-        return queryset
-    #   except DoesNotExist:
-    #       return JsonResponse({'message': 'The tutorial does not exist'})
-
-    def get_object(self):
+class RegisterView(APIView):
+    def post(self, request):
         try:
-            queryset=self.get_queryset()
-            serializer=self.serializer_class(queryset,many=True)
-            if queryset is None:
-                raise DoesNotExist
-            return queryset
-        except DoesNotExist:
-            return FileNotFoundError('File not found')
-            # return HttpResponse('Doc not found')
-    # queryset=Student.objects.all()
+            data = request.data
+            serializer = StudentSerializer(data=data)
+
+            if not serializer.is_valid():
+                return Response(
+                    {"data": serializer.errors, "message": "Something went wrong"},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+            serializer.save()
+            return Response(
+                {
+                    "message": "Student Created successfully",
+                    "payload": {
+                        "data": serializer.data,
+                    },
+                    "totalCount": total,
+                    "success": "true",
+                }
+            )
+        except Exception as e:
+            return Response(
+                {"message": "Something went wrong"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+
+class LoginView(generics.GenericAPIView):
+    def post(self, request):
+        email = request.data.get("email")
+        password = request.data.get("password")
+        try:
+            user = Student.objects.get(email=email)
+            if user.password == password:
+                payload = {"email": email}
+                jwt_token = {"token": jwt.encode(payload, "SECRET_KEY")}
+                return Response(jwt_token, status=status.HTTP_200_OK)
+            else:
+                return Response(
+                    {"error": "Invalid credentials"}, status=status.HTTP_400_BAD_REQUEST
+                )
+        except Student.DoesNotExist:
+            return Response(
+                {"error": "Invalid credentials"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+
+class StudentList(generics.ListAPIView):
+    def get(self, request):
+        page = int(request.GET.get("page", 1))
+        pageSize = int(request.GET.get("pageSize", 1))
+        students = Student.objects.all()
+        total = students.count()
+        start = (page - 1) * pageSize
+        end = page * pageSize
+
+        serializer = StudentSerializer(students[start:end], many=True)
+
+        return Response(
+            {
+                "message": "Student information fetched successfully",
+                "payload": {
+                    "data": serializer.data,
+                },
+                "totalCount": total,
+                "success": "true",
+            }
+        )
 
 
 
-## updating the student details by using id
+class UpdateModelView(APIView):
+    def get_object(self, pk):
+        try:
+            return Student.objects.get(pk=pk)
+        except Student.DoesNotExist:
+            return Response({"error": "The model instance does not exist."}, status=status.HTTP_404_NOT_FOUND)
 
-class UpdateStudentDetails(generics.RetrieveUpdateDestroyAPIView):
+    def put(self, request, pk):
+        model = self.get_object(pk)
+        serializer = StudentSerializer(model, data=request.data,partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({
+                "message": "Student information updated successfully",
+                "payload": {
+                    "data": serializer.data,
+                },
+                
+            })
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    serializer_class = StudentSerializer
-    queryset = Student.objects.all()
-    lookup_field="pk"
 
-    @csrf_exempt
-    def update_items(request, pk):
-       student = Student.objects.get(pk=pk)
-       data = StudentSerializer(instance=student, data=request.data)
-       if data.is_valid():
-          data.save()
-          return Response(data.data)
-       else:
-          return Response({"message":"error"})
-       
-
-class DeleteStudent(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = StudentSerializer
-    queryset = Student.objects.all()
-    lookup_field="pk"
-
-    def delete_student(request,pk):
-        student =Student.objects.get(pk=pk)
+class DeleteStudent(APIView):
+    def delete(self,request, pk):
+        student = Student.objects.get(pk=pk)
         if student is None:
-          logging.error(f"error occured")
-          return Response({"message":"student is not exist with given id"})
+            logging.error(f"error occured")
+            return Response({"detail": "student is not exist with given id"})
         else:
             student.delete()
-            logging.info({"message":"student is not exist with given id"})
-            return Response({"message":"Student deleted successfully..."})
-
-
-
-  
-
+            logging.info({"message": "student is not exist with given id"})
+            return Response({"message": "Student deleted successfully..."},status=status.HTTP_204_NO_CONTENT)
 
 
 

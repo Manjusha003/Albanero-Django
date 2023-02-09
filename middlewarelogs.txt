@@ -1,0 +1,389 @@
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Bad Request: /createuser
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /createuser
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+rest_framework.request.WrappedAttributeError: 'Request' object has no attribute 'Meta'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/users/
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+rest_framework.request.WrappedAttributeError: 'Request' object has no attribute 'Meta'
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("HTTP_email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+rest_framework.request.WrappedAttributeError: 'Request' object has no attribute 'Meta'
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Unauthorized: /api/user/3
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Unauthorized: /api/user/3
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Unauthorized: /api/user/3
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+ERROR:django.request:Internal Server Error: /api/user/3
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 227, in user
+    self._authenticate()
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 19, in authenticate
+    email=request.Meta.get("email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+rest_framework.request.WrappedAttributeError: 'Request' object has no attribute 'Meta'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py changed, reloading.
+INFO:root: new Student is created sucessfully...
+INFO:root: new Student is created sucessfully...
+WARNING:django.request:Unauthorized: /api/user/3
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\Rest_framework\settings.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\Rest_framework\settings.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 41, in has_permission
+    email=request.Meta.get("email")
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'Meta'
+ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 43, in has_permission
+    student=Student.objects.get(email=email,password=password,pk=view.kwargs.get("pk"))
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1669, in _cursor
+    self._cursor_obj = self._collection.find(self._query, **self._cursor_args)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1718, in _query
+    self._mongo_query = self._query_obj.to_query(self._document)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 91, in to_query
+    query = query.accept(QueryCompilerVisitor(document))
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 184, in accept
+    return visitor.visit_query(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 80, in visit_query
+    return transform.query(self.document, **query.query)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\transform.py", line 124, in query
+    value = field.prepare_query_value(op, value)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\fields.py", line 2231, in prepare_query_value
+    return self.value_decorator(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\custom_middleware.py", line 43, in has_permission
+    student=Student.objects.get(email=email,password=password,pk=view.kwargs.get("pk"))
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 269, in get
+    result = next(queryset)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1596, in __next__
+    raw_doc = next(self._cursor)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1669, in _cursor
+    self._cursor_obj = self._collection.find(self._query, **self._cursor_args)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1718, in _query
+    self._mongo_query = self._query_obj.to_query(self._document)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 91, in to_query
+    query = query.accept(QueryCompilerVisitor(document))
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 184, in accept
+    return visitor.visit_query(self)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\visitor.py", line 80, in visit_query
+    return transform.query(self.document, **query.query)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\transform.py", line 124, in query
+    value = field.prepare_query_value(op, value)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\fields.py", line 2231, in prepare_query_value
+    return self.value_decorator(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\Rest_framework\settings.py changed, reloading.
