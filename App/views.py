@@ -1,20 +1,15 @@
 from django.shortcuts import render
 from mongoengine import DoesNotExist
 from rest_framework.response import Response
-from .serializers import StudentSerializer  
+from .serializers import StudentSerializer
 from .models import Student
 from rest_framework_mongoengine import generics
-# from rest_framework.exceptions import NotFound
 import logging
 from rest_framework.views import APIView
 from rest_framework import status
 import jwt
 
 logging.basicConfig(filename="Logging.txt", filemode="a", level=logging.INFO)
-
-
-students = Student.objects.all()
-total = students.count()
 
 
 class RegisterView(APIView):
@@ -35,7 +30,6 @@ class RegisterView(APIView):
                     "payload": {
                         "data": serializer.data,
                     },
-                    "totalCount": total,
                     "success": "true",
                 }
             )
@@ -65,28 +59,59 @@ class LoginView(generics.GenericAPIView):
             )
 
 
+
+
 class StudentList(generics.ListAPIView):
+    serializer_class = StudentSerializer
+
     def get(self, request):
+        group_by=request.GET.get("groupBy")
+        if group_by is not None:
+            group = [
+            {"$group": {"_id": f"${group_by}", "name": {"$push": "$name"}}},
+            {"$project": {group_by: "$_id", "_id": 0, "name": "$name"}},
+            {"$sort": {"age": -1}},
+        ]
+            agregated_data = Student.objects.aggregate(*group)
+            agregated_list=list(agregated_data)
+            return Response(
+              {
+                "message": "Student information fetched successfully",
+                "payload": {
+                    "data": agregated_list,
+                    "totalCount": Student.objects.count(),
+                },
+                "success": "true",
+              }
+            )
+
         page = int(request.GET.get("page", 1))
-        pageSize = int(request.GET.get("pageSize", 1))
-        students = Student.objects.all()
-        total = students.count()
-        start = (page - 1) * pageSize
-        end = page * pageSize
+        page_size = int(request.GET.get("pageSize", 1))
+        order_by = request.GET.get("orderBy")
+        start = (page - 1) * page_size
+        end = page * page_size
 
-        serializer = StudentSerializer(students[start:end], many=True)
+        if page is not None:
+          if page_size is not None:
+            students = Student.objects.skip(start).limit(end)
+            serializer = StudentSerializer(students, many=True)
+          
+        if order_by is not None:
+            students = Student.objects.order_by(order_by)
+            serializer = StudentSerializer(students, many=True)
 
+
+        serializer = StudentSerializer(students, many=True)
         return Response(
             {
                 "message": "Student information fetched successfully",
                 "payload": {
                     "data": serializer.data,
+                    "totalCount": Student.objects.count(),
                 },
-                "totalCount": total,
                 "success": "true",
             }
         )
-
 
 
 class UpdateModelView(APIView):
@@ -94,25 +119,29 @@ class UpdateModelView(APIView):
         try:
             return Student.objects.get(pk=pk)
         except Student.DoesNotExist:
-            return Response({"error": "The model instance does not exist."}, status=status.HTTP_404_NOT_FOUND)
+            return Response(
+                {"error": "The model instance does not exist."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
 
     def put(self, request, pk):
         model = self.get_object(pk)
-        serializer = StudentSerializer(model, data=request.data,partial=True)
+        serializer = StudentSerializer(model, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
-            return Response({
-                "message": "Student information updated successfully",
-                "payload": {
-                    "data": serializer.data,
-                },
-                
-            })
+            return Response(
+                {
+                    "message": "Student information updated successfully",
+                    "payload": {
+                        "data": serializer.data,
+                    },
+                }
+            )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 class DeleteStudent(APIView):
-    def delete(self,request, pk):
+    def delete(self, request, pk):
         student = Student.objects.get(pk=pk)
         if student is None:
             logging.error(f"error occured")
@@ -120,7 +149,7 @@ class DeleteStudent(APIView):
         else:
             student.delete()
             logging.info({"message": "student is not exist with given id"})
-            return Response({"message": "Student deleted successfully..."},status=status.HTTP_204_NO_CONTENT)
-
-
-
+            return Response(
+                {"message": "Student deleted successfully..."},
+                status=status.HTTP_204_NO_CONTENT,
+            )
