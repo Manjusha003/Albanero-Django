@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'User',
-    'rest_framework.authtoken'
+    
 
 ]
 
@@ -77,17 +78,13 @@ WSGI_APPLICATION = 'Rest_framework.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
+
 
 
 import mongoengine 
 mongoengine.connect(
-    db='Albanero-Django',
+   db='Albanero-Django',
    host= "mongodb+srv://ManjushaRaut:D1NNvookajCHUeKG@cluster0.3qd4bit.mongodb.net/Albanero-Django?retryWrites=true&w=majority"
 )
 
@@ -135,3 +132,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'mongoengine.django.auth.MongoEngineBackend',
+]

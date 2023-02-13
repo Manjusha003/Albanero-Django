@@ -1,12 +1,11 @@
 
 from django.urls import path
-from .views import StudentAPIView
+from .views import StudentAPI
 
 urlpatterns = [
     
-    # path("register", StudentAPIView.as_view()),
-    path("api/user",StudentAPIView.as_view()),
-    # path("api/user/update/<int:pk>",get_users.as_view()),
-    # path("api/user/delete/<int:pk>",delete_user.as_view())
+    # path("register", RegisterView.as_view()),
+    path("api/user",StudentAPI.as_view()),
+    
     
 ]
