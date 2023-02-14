@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from mongoengine import DoesNotExist
+
 from rest_framework.response import Response
 from .serializers import StudentSerializer
 from .models import Student
@@ -8,6 +8,8 @@ import logging
 from rest_framework.views import APIView
 from rest_framework import status
 import jwt
+
+
 
 logging.basicConfig(filename="Logging.txt", filemode="a", level=logging.INFO)
 
@@ -100,14 +102,14 @@ class StudentList(generics.ListAPIView):
             students = Student.objects.order_by(order_by)
             serializer = StudentSerializer(students, many=True)
 
-
+        total=Student.objects.filter(name='Manju').count()
         serializer = StudentSerializer(students, many=True)
         return Response(
             {
                 "message": "Student information fetched successfully",
                 "payload": {
                     "data": serializer.data,
-                    "totalCount": Student.objects.count(),
+                    "totalCount": total
                 },
                 "success": "true",
             }

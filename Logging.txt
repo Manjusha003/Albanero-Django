@@ -2478,31 +2478,7 @@ TypeError: Object of type QuerySet is not JSON serializable
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
-    response = response.render()
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 105, in render
-    self.content = self.rendered_content
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
-    ret = renderer.render(self.data, accepted_media_type, context)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\renderers.py", line 102, in render
-    allow_nan=not self.strict, separators=separators
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
-    return json.dumps(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 238, in dumps
-    **kw).encode(obj)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 199, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 257, in iterencode
-    return _iterencode(o, 0)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
-    return super().default(obj)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\json\encoder.py", line 179, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-TypeError: Object of type QuerySet is not JSON serializable
+
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -2554,12 +2530,7 @@ Traceback (most recent call last):
     response = self.handle_exception(exc)
   File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
     self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 73, in get
-    print(list.data)
+ 
 AttributeError: 'QuerySet' object has no attribute 'data'
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -2636,27 +2607,6 @@ Traceback (most recent call last):
 AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'tuple'>`
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get
-    "data": json.loads(data),
-UnboundLocalError: local variable 'data' referenced before assignment
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -2692,20 +2642,6 @@ Traceback (most recent call last):
     return func(self, *args, **kwargs)
   File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
     retryable=not cmd._performs_write,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 795, in command
-    self._raise_connection_failure(error)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 128, in command
-    flags, spec, dbname, read_preference, codec_options, ctx=compression_ctx
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\message.py", line 692, in _op_msg
-    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
 bson.errors.InvalidDocument: documents must have only string keys, key was <built-in function id>
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -2718,1415 +2654,8 @@ Traceback (most recent call last):
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
   File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
     return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 78, in get
-    student=Student.objects.values('name')
-AttributeError: 'QuerySet' object has no attribute 'values'
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 78, in get
-    student=Student.objects.values('name')
-AttributeError: 'QuerySet' object has no attribute 'values'
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 83, in get
-    student=Student.objects.aggregate(Sum('age'))
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1301, in aggregate
-    user_pipeline = [pipeline] if isinstance(pipeline, dict) else list(pipeline)
-TypeError: 'Sum' object is not iterable
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 83, in get
-    student=Student.objects.aggregate('age')
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1334, in aggregate
-    return collection.aggregate(final_pipeline, cursor={}, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2444, in aggregate
-    **kwargs,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
-    retryable=not cmd._performs_write,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 170, in command
-    parse_write_concern_error=parse_write_concern_error,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
-    raise OperationFailure(errmsg, code, response, max_wire_version)
-pymongo.errors.OperationFailure: Expected 'pipeline' to be BSON docs (or equivalent), but got primitive.A instead. Doc = [{aggregate student} {pipeline [a g e]} {cursor []} {lsid [{id {4 [218 173 141 123 79 96 74 231 159 131 161 124 90 142 215 52]}}]} {$clusterTime [{clusterTime {1676030050 102}} {signature [{hash {0 [38 208 154 69 239 167 48 168 135 67 103 15 207 197 117 217 116 135 250 10]}} {keyId 7148093025393049602}]}]} {$db Albanero-Django}], full error: {'ok': 0, 'errmsg': "Expected 'pipeline' to be BSON docs (or equivalent), but got primitive.A instead. Doc = [{aggregate student} {pipeline [a g e]} {cursor []} {lsid [{id {4 [218 173 141 123 79 96 74 231 159 131 161 124 90 142 215 52]}}]} {$clusterTime [{clusterTime {1676030050 102}} {signature [{hash {0 [38 208 154 69 239 167 48 168 135 67 103 15 207 197 117 217 116 135 250 10]}} {keyId 7148093025393049602}]}]} {$db Albanero-Django}]", 'code': 8000, 'codeName': 'AtlasError'}
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 77, in get
-    list=Student.objects.values('name')
-AttributeError: 'QuerySet' object has no attribute 'values'
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 107, in get
-    "data": serializer.data,  # json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\queryset.py", line 110, in _iter_results
-    self._populate_cache()
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\queryset.py", line 129, in _populate_cache
-    self._result_cache.append(next(self))
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1603, in __next__
-    _auto_dereference=self._auto_dereference,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 836, in _from_son
-    obj = cls(__auto_convert=False, _created=created, **data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 99, in __init__
-    raise FieldDoesNotExist(msg)
-mongoengine.errors.FieldDoesNotExist: The fields "{'_id'}" do not exist on the document "Student"
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\models.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 69, in get_queryset
-    response = Student.objects.aggregate(group)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1334, in aggregate
-    return collection.aggregate(final_pipeline, cursor={}, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2444, in aggregate
-    **kwargs,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
-    retryable=not cmd._performs_write,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 170, in command
-    parse_write_concern_error=parse_write_concern_error,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
-    raise OperationFailure(errmsg, code, response, max_wire_version)
-pymongo.errors.OperationFailure: The field 'id' must be an accumulator object, full error: {'ok': 0.0, 'errmsg': "The field 'id' must be an accumulator object", 'code': 40234, 'codeName': 'Location40234', '$clusterTime': {'clusterTime': Timestamp(1676032002, 4), 'signature': {'hash': b'*4O\x89\xdb\xad\r\x97\x8b(*\x9e\xean}C\xe9H/\x88', 'keyId': 7148093025393049602}}, 'operationTime': Timestamp(1676032002, 4)}
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get_queryset
-    "data": serializer.data, #json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get_queryset
-    "data": serializer.data, #json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get_queryset
-    "data": serializer.data, #json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 69, in get_queryset
-    response = Student.aggregate(group)
-AttributeError: type object 'Student' has no attribute 'aggregate'
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get_queryset
-    "data": serializer.data, #json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get_queryset
-    "data": serializer.data, #json.loads(data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 70, in get_queryset
-    list=list(response)
-UnboundLocalError: local variable 'list' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 71, in get_queryset
-    response.render()
-AttributeError: 'CommandCursor' object has no attribute 'render'
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 73, in get_queryset
-    response.render()
-AttributeError: 'HttpResponse' object has no attribute 'render'
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 71, in get_queryset
-    print(list(agregated_data))
-NameError: name 'response' is not defined
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
-    return get_attribute(instance, self.source_attrs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\fields.py", line 94, in get_attribute
-    instance = instance[attr]
-KeyError: 'email'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in <listcomp>
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
-    attribute = field.get_attribute(instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
-    raise type(exc)(msg)
-KeyError: "Got KeyError when attempting to get a value for field `email` on serializer `StudentSerializer`.\nThe serializer field might be named incorrectly and not match any attribute or key on the `dict` instance.\nOriginal exception text was: 'email'."
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 38, in list
-    queryset = self.filter_queryset(self.get_queryset())
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 70, in get_queryset
-    agregated_data = Student.objects.aggregate(*group)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1334, in aggregate
-    return collection.aggregate(final_pipeline, cursor={}, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\collection.py", line 2444, in aggregate
-    **kwargs,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
-    retryable=not cmd._performs_write,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\network.py", line 170, in command
-    parse_write_concern_error=parse_write_concern_error,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
-    raise OperationFailure(errmsg, code, response, max_wire_version)
-pymongo.errors.OperationFailure: Expected 'pipeline' to be BSON docs (or equivalent), but got primitive.A instead. Doc = [{aggregate student} {pipeline [$ g r o u p]} {cursor []} {lsid [{id {4 [175 33 12 194 126 226 64 47 155 145 110 174 17 223 144 2]}}]} {$clusterTime [{clusterTime {1676034025 15}} {signature [{hash {0 [144 111 216 108 153 62 37 104 19 146 72 94 16 45 107 84 2 141 204 41]}} {keyId 7148093025393049602}]}]} {$db Albanero-Django}], full error: {'ok': 0, 'errmsg': "Expected 'pipeline' to be BSON docs (or equivalent), but got primitive.A instead. Doc = [{aggregate student} {pipeline [$ g r o u p]} {cursor []} {lsid [{id {4 [175 33 12 194 126 226 64 47 155 145 110 174 17 223 144 2]}}]} {$clusterTime [{clusterTime {1676034025 15}} {signature [{hash {0 [144 111 216 108 153 62 37 104 19 146 72 94 16 45 107 84 2 141 204 41]}} {keyId 7148093025393049602}]}]} {$db Albanero-Django}]", 'code': 8000, 'codeName': 'AtlasError'}
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework_mongoengine\generics.py", line 63, in get
-    return self.list(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\mixins.py", line 46, in list
-    return Response(serializer.data)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 768, in data
-    ret = super().data
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 253, in data
-    self._data = self.to_representation(self.instance)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\serializers.py", line 687, in to_representation
-    self.child.to_representation(item) for item in iterable
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\template\response.py", line 119, in __iter__
-    'The response content must be rendered before it can be iterated over.'
-django.template.response.ContentNotRenderedError: The response content must be rendered before it can be iterated over.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-TypeError: get() takes 1 positional argument but 2 were given
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users/group
-Traceback (most recent call last):
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 74, in get
-    agregated_data = Student.objects.aggregate(*group)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\mongoengine\queryset\base.py", line 1334, in aggregate
-    return collection.aggregate(final_pipeline, cursor={}, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\collection.py", line 2444, in aggregate
-    **kwargs,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
-    retryable=not cmd._performs_write,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\network.py", line 170, in command
-    parse_write_concern_error=parse_write_concern_error,
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\venv\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
-    raise OperationFailure(errmsg, code, response, max_wire_version)
-pymongo.errors.OperationFailure: $sort key ordering must be 1 (for ascending) or -1 (for descending), full error: {'ok': 0.0, 'errmsg': '$sort key ordering must be 1 (for ascending) or -1 (for descending)', 'code': 15975, 'codeName': 'Location15975', '$clusterTime': {'clusterTime': Timestamp(1676035528, 31), 'signature': {'hash': b'\xc3|\x1a\xd8\x04\x94\x92\x9e\x10T|\x19\xbd\x83\xa5^@\xc1\xe2\x8e', 'keyId': 7148093025393049602}}, 'operationTime': Timestamp(1676035528, 31)}
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
-WARNING:django.request:Not Found: /api/users/
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\urls.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get
-    start = (page - 1) * page_size
-UnboundLocalError: local variable 'page' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get
-    start = (page - 1) * page_size
-UnboundLocalError: local variable 'page_size' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 76, in get
-    start = (page - 1) * page_size
-UnboundLocalError: local variable 'page_size' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 106, in get
-    "data": serializer.data,
-UnboundLocalError: local variable 'serializer' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 115, in get
-    "data": list(agregated_data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 121, in __call__
-    raise InvalidQueryError(msg)
-mongoengine.errors.InvalidQueryError: Not a query object: <pymongo.command_cursor.CommandCursor object at 0x0000015281D57E88>. Did you intend to use key=value?
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 115, in get
-    "data": list(agregated_data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 121, in __call__
-    raise InvalidQueryError(msg)
-mongoengine.errors.InvalidQueryError: Not a query object: <pymongo.command_cursor.CommandCursor object at 0x000001D50EF74308>. Did you intend to use key=value?
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 115, in get
-    "data": list(agregated_data),
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 121, in __call__
-    raise InvalidQueryError(msg)
-mongoengine.errors.InvalidQueryError: Not a query object: <pymongo.command_cursor.CommandCursor object at 0x0000028A0C9E7788>. Did you intend to use key=value?
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 101, in get
-    "data": list(agregated_data),
-UnboundLocalError: local variable 'list' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 97, in get
-    list=list(agregated_data)
-UnboundLocalError: local variable 'list' referenced before assignment
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
-ERROR:django.request:Internal Server Error: /api/users
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
-    response = get_response(request)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
-    return view_func(*args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
-    return self.dispatch(request, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
-    response = self.handle_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
-    self.raise_uncaught_exception(exc)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
-    raise exc
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
-    response = handler(request, *args, **kwargs)
-  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 97, in get
-    agregated_list=list(agregated_data)
-UnboundLocalError: local variable 'list' referenced before assignment
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -4176,24 +2705,6 @@ Traceback (most recent call last):
     agregated_data = Student.objects.aggregate(*group)
   File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\base.py", line 1334, in aggregate
     return collection.aggregate(final_pipeline, cursor={}, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2444, in aggregate
-    **kwargs,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2347, in _aggregate
-    retryable=not cmd._performs_write,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_read
-    return func(session, server, sock_info, read_pref)
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\aggregation.py", line 153, in get_cursor
-    user_fields=self._user_fields,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
-    write_concern=write_concern,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 170, in command
-    parse_write_concern_error=parse_write_concern_error,
-  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
-    raise OperationFailure(errmsg, code, response, max_wire_version)
 pymongo.errors.OperationFailure: Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField., full error: {'ok': 0.0, 'errmsg': "Invalid $project :: caused by :: FieldPath field names may not start with '$'. Consider using $getField or $setField.", 'code': 16410, 'codeName': 'Location16410', '$clusterTime': {'clusterTime': Timestamp(1676089643, 7), 'signature': {'hash': b'\xfd\xa6\xafc)\x98\x85\x88r\x98:\xa5\xa2P\xc9\x9f\xc0\x1f\x03x', 'keyId': 7148093025393049602}}, 'operationTime': Timestamp(1676089643, 7)}
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
@@ -4202,3 +2713,131 @@ INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
 INFO:django.utils.autoreload:C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 98, in get
+    students = Student.objects.skip(start).limit(end)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\manager.py", line 38, in __get__
+    queryset = queryset_class(owner, owner._get_collection())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 232, in _get_collection
+    cls.ensure_indexes()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 916, in ensure_indexes
+    collection.create_index(fields, background=background, **opts)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2055, in create_index
+    return self.__create_indexes([index], session, **cmd_options)[0]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 1911, in __create_indexes
+    with self._socket_for_writes(session) as sock_info:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1217, in _get_socket
+    with server.get_socket(handler=err_handler) as sock_info:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1407, in get_socket
+    sock_info = self._get_socket(handler=handler)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1520, in _get_socket
+    sock_info = self.connect(handler=handler)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1378, in connect
+    sock_info.authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 870, in authenticate
+    auth.authenticate(creds, self)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 549, in authenticate
+    auth_func(credentials, sock_info)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 475, in _authenticate_default
+    return _authenticate_scram(credentials, sock_info, "SCRAM-SHA-1")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 201, in _authenticate_scram
+    res = sock_info.command(source, cmd)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
+    write_concern=write_concern,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 170, in command
+    parse_write_concern_error=parse_write_concern_error,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+WARNING:django.request:Method Not Allowed: /register
+ERROR:django.request:Internal Server Error: /api/users
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Admin\Desktop\Project\Albanero-Django\App\views.py", line 98, in get
+    students = Student.objects.skip(start).limit(end)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\queryset\manager.py", line 38, in __get__
+    queryset = queryset_class(owner, owner._get_collection())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 232, in _get_collection
+    cls.ensure_indexes()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 916, in ensure_indexes
+    collection.create_index(fields, background=background, **opts)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 2055, in create_index
+    return self.__create_indexes([index], session, **cmd_options)[0]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 1911, in __create_indexes
+    with self._socket_for_writes(session) as sock_info:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1217, in _get_socket
+    with server.get_socket(handler=err_handler) as sock_info:
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1407, in get_socket
+    sock_info = self._get_socket(handler=handler)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1520, in _get_socket
+    sock_info = self.connect(handler=handler)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 1378, in connect
+    sock_info.authenticate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 870, in authenticate
+    auth.authenticate(creds, self)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 549, in authenticate
+    auth_func(credentials, sock_info)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 475, in _authenticate_default
+    return _authenticate_scram(credentials, sock_info, "SCRAM-SHA-1")
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\auth.py", line 201, in _authenticate_scram
+    res = sock_info.command(source, cmd)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\pool.py", line 789, in command
+    write_concern=write_concern,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\network.py", line 170, in command
+    parse_write_concern_error=parse_write_concern_error,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\helpers.py", line 181, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: Authentication failed., full error: {'ok': 0.0, 'errmsg': 'Authentication failed.', 'code': 18, 'codeName': 'AuthenticationFailed'}
+WARNING:django.request:Method Not Allowed: /register

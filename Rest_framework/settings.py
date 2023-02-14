@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -88,12 +88,20 @@ WSGI_APPLICATION = "Rest_framework.wsgi.application"
 #     }
 # }
 
+# DATABASES = {
+#      'default': {
+#         'ENGINE': 'django.db.backends.mongodb',
+#         'NAME': env('DATABASE_NAME'),
+#         'USER': env('DATABASE_USER'),
+#         'PASSWORD': env('DATABASE_PASS'),
+#         'HOST': env('DATABASE_HOST'),
+#         'PORT': env('DATABASE_PORT'),
+#     }
+# }
 
-import mongoengine 
-mongoengine.connect(
-    db=env('DATABASE_NAME'),
-    host=env('DATABASE_URL'),
-)
+
+
+
 
 REST_FRAMEWORK = {
     # "DEFAULT_AUTHENTICATION_CLASSES": [
@@ -102,10 +110,9 @@ REST_FRAMEWORK = {
     #     "DEFAULT_PERMISSION_CLASSES": [
     #     "App.custom_middleware.StudentAuthorization",
     # ],
-     "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-
+    # "DEFAULT_AUTHENTICATION_CLASSES": (
+    #     "rest_framework_simplejwt.authentication.JWTAuthentication",
+    # ),
 }
 
 
@@ -127,6 +134,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+import mongoengine
+
+mongoengine.connect(
+    db=env("DATABASE_NAME"),
+    host=env("DATABASE_HOST"),
+    port=int(env("DATABASE_PORT")),
+    username=env("DATABASE_USER"),
+    password=env("DATABASE_PASS"),
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
